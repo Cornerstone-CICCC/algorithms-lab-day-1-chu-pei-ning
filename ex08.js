@@ -1,7 +1,15 @@
 // Exercise 8: Write a function named 'longestWord' that takes a string of text and returns the longest word in the string.
 
 function longestWord(text) {
-  // your code here
+  const textArrary = text.split(' ')
+  let longest = ''
+  for (let i = 0; i < textArrary.length; i ++) {
+    const currentWord = textArrary[i]
+    if (textArrary[i].length > longest.length) {
+      longest = currentWord
+    }
+  }
+  return longest
 }
 
-console.error.longestWord('The quick brown fox jumps over the lazy dog') // 'jumps'
+console.log(longestWord('The quick brown fox jumps over the lazzzzzzy dog') )// 'lazzzzzzy's
