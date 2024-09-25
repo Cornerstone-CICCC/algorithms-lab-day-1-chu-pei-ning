@@ -1,5 +1,6 @@
 // Exercise 4: Write a function named 'countOccurrences' that takes an array of strings and returns an object with the count of each string in the array.
 
+//同第17題
 function countOccurrences(arr) {
   let output = {}
   
